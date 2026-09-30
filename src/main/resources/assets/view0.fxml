@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #1E293B;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.project.Controller0">
+   <children>
+      <!-- Título de la vista -->
+      <Text fill="#F8FAFC" layoutX="45.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Formulario" wrappingWidth="328.13671875" AnchorPane.leftAnchor="45.0" AnchorPane.topAnchor="65.0">
+         <font>
+            <Font name="System Bold" size="48.0" />
+         </font>
+      </Text>
+
+      <!-- Formulario central -->
+      <VBox alignment="CENTER_LEFT" layoutX="45.0" layoutY="150.0" prefWidth="400.0" spacing="15.0">
+         <children>
+            <Label text="Nombre:" textFill="#94A3B8">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtName" onKeyTyped="#checkInputs" promptText="Introduce tu nombre" prefHeight="35.0" style="-fx-background-color: #334155; -fx-text-fill: #F8FAFC; -fx-prompt-text-fill: #64748B; -fx-background-radius: 8px;">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextField>
+
+            <Label text="Edad:" textFill="#94A3B8">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtAge" onKeyTyped="#checkInputs" promptText="Introduce tu edad" prefHeight="35.0" style="-fx-background-color: #334155; -fx-text-fill: #F8FAFC; -fx-prompt-text-fill: #64748B; -fx-background-radius: 8px;">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextField>
+
+            <Button fx:id="btnSubmit" disable="true" mnemonicParsing="false" onAction="#goToResults" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #3B82F6; -fx-text-fill: white; -fx-background-radius: 8px; -fx-cursor: hand;" text="Enviar">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
